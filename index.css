@@ -1,0 +1,225 @@
+
+    :root {
+      --primary: #6c63ff;
+      --primary-dark: #5a52e0;
+      --bg: #f6f8ff;
+      --card: #ffffff;
+      --text-dark: #1f2937;
+      --text-light: #6b7280;
+      --shadow: 0 20px 40px rgba(0,0,0,0.08);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text-dark);
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* NAVBAR */
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .logo span {
+      background: var(--primary);
+      color: white;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #d1d5db;
+    }
+
+    .btn-outline:hover {
+      background: #eef2ff;
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 900px;
+      margin: 80px auto 60px;
+      text-align: center;
+      animation: fadeUp 1s ease;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--text-light);
+      margin: 24px auto 36px;
+      max-width: 700px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    /* GOALS PREVIEW */
+    .goals-wrapper {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .goal-card h4 {
+      margin: 0 0 12px;
+      font-size: 16px;
+    }
+
+    .progress {
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      border-radius: 999px;
+      animation: load 1.5s ease forwards;
+    }
+
+    .blue { background: #3b82f6; width: 75%; }
+    .green { background: #22c55e; width: 50%; }
+    .purple { background: var(--primary); width: 30%; }
+
+    .goal-card small {
+      display: block;
+      margin-top: 10px;
+      color: var(--text-light);
+    }
+
+    /* AUTH PAGES */
+    .auth {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .auth-card {
+      background: white;
+      padding: 40px;
+      width: 100%;
+      max-width: 420px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      animation: fadeUp 0.8s ease;
+    }
+
+    .auth-card h2 {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .auth-card input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 16px;
+      border-radius: 12px;
+      border: 1px solid #d1d5db;
+    }
+
+    .auth-card input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes load {
+      from { width: 0; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: var(--text-light);
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 40px; }
+      .hero-buttons { flex-direction: column; }
+    }
+    img {
+        height: 45px;
+        width: 70px;
+        border-radius: 20px;
+    }
+     body.dark{
+      --bg:#0f172a;
+      --card:#1e293b;
+      --text:#f8fafc;
+      color: white;
+      --muted:#94a3b8;
+    }

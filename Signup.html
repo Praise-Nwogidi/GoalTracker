@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description"
+content="GoalTracker is a modern, distraction-free platform to set goals, track progress, visualize growth, and celebrate wins.">
+<meta name="author" content="Praise Nwogidi">
+<title>Sign Up | GoalTracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="C:\Users\user\code\Goal-Tracker Logo.jpg">
+<link href="GoalTracker\signup.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+  <div class="logo"><img src="GoalTracker\Goal-Tracker Logo.jpg">GoalTracker</div>
+  <button class="toggle" onclick="toggleTheme()">🌙</button>
+</nav>
+  <form action="GoalTracker\Dashboard.html" method="post">
+<div class="auth">
+  <div class="card">
+    <h2>Create Account</h2>
+    <input name="name" placeholder="Full Name" required>
+    <input name="Email" type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required minlength="8"
+      pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      title="Password must be at least 8 characters long and include both uppercase and lowercase letters">
+      <small>Must be at least 8 characters, with Uppercase and Lowercase letters.</small>
+      <button class="primary" type="submit">Sign Up</button>
+    <p>Already have an account? <a href="GoalTracker\login.html">Login</a></p>
+  </div>
+</div>
+</form>
+<footer>
+     2026 GoalTracker.<br>
+      Built for focus and consistency.
+  </footer>
+  <script src="GoalTracker\signup.js"></script>
+</body>
+</html>

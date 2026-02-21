@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description"
+content="GoalTracker is a modern, distraction-free platform to set goals, track progress, visualize growth, and celebrate wins.">
+<meta name="author" content="Praise Nwogidi">
+<title>GoalTracker – Turn Goals Into Achievements</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="C:\Users\user\code\Goal-Tracker Logo.jpg">
+<link href="GoalTracker\styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="logo"><img src="GoalTracker\Goal-Tracker Logo.jpg">GoalTracker</div>
+  <button class="toggle" onclick="toggleTheme()">🌙</button>
+</nav>
+
+<section class="hero">
+  <h1>Turn Your Goals Into Achievements</h1>
+  <p>A modern, distraction-free platform to help students and young professionals set meaningful goals, track progress, and celebrate success.</p>
+</section>
+
+<div class="container">
+  <!-- SMART DASHBOARD -->
+<section class="grid">
+  <div class="card">
+    <h4>Total Goals</h4>
+    <h2 id="totalGoals">0</h2>
+  </div>
+  <div class="card">
+    <h4>Completed</h4>
+    <h2 id="completedGoals">0</h2>
+  </div>
+  <div class="card">
+    <h4>Active</h4>
+    <h2 id="activeGoals">0</h2>
+  </div>
+  <div class="card">
+    <h4>Avg Progress</h4>
+    <h2><span id="avgProgress">0</span>%</h2>
+  </div>
+</section>
+
+
+  <!-- GOAL CREATION -->
+  <section class="card">
+    <h3>Create New Goal</h3>
+    <input id="goalName" placeholder="Goal name" required>
+    <input id="goalDeadline" type="date">
+    <button class="btn primary" onclick="addGoal()">Add Goal</button>
+  </section>
+
+  <!-- GOALS -->
+  <section class="grid" id="goalList"></section>
+
+  <!-- STATS -->
+  <section class="grid">
+    <div class="card">
+      <h3>Weekly Progress</h3>
+      <canvas id="chart"></canvas>
+    </div>
+    <div class="card">
+      <h3>Streaks</h3>
+      <p><strong id="streak">0</strong> day streak 🔥</p>
+      <p class="muted">Keep updating your goals daily</p>
+    </div>
+  </section>
+  <section class="card">
+  <h3>Consistency Heatmap</h3>
+  <div class="heatmap" id="heatmap"></div>
+</section>
+
+
+</div>
+
+<footer>
+     2026 GoalTracker.<br>
+      Built for focus and consistency.
+  </footer>
+
+  <script src="GoalTracker\theme.js"></script>

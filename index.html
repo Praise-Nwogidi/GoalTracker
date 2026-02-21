@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+content="GoalTracker is a modern, distraction-free platform to set goals, track progress, visualize growth, and celebrate wins.">
+<meta name="author" content="Praise Nwogidi">
+  <title>GoalTracker – Turn Goals Into Achievements</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="Goal-Tracker Logo.jpg">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="GoalTracker\index.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo"><img src="GoalTracker\Goal-Tracker Logo.jpg">GoalTracker</div>
+    <div class="nav-actions">
+        <button class="toggle" onclick="toggleDark()">🌙</button>
+      <a href="GoalTracker\login.html">Log In</a>
+      <a href="GoalTracker\Signup.html"><button class="btn btn-primary">Get Started</button></a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Turn Your Goals Into Achievements</h1>
+    <p>A modern, distraction-free platform to help students and young professionals set meaningful goals, track progress, and celebrate success.</p>
+    <div class="hero-buttons">
+      <a href="GoalTracker\Signup.html" target="_blank"><button class="btn btn-primary">Get Started Free</button></a>
+      <a href="GoalTracker\login.html" target="_blank"><button class="btn btn-outline">Log In</button></a>
+    </div>
+  </section>
+
+  <!-- GOALS -->
+  <section class="goals-wrapper">
+    <div class="goal-card">
+      <h4>Learn Web Development</h4>
+      <div class="progress"><div class="bar blue"></div></div>
+      <small>75% complete</small>
+    </div>
+    <div class="goal-card">
+      <h4>Read 12 Books</h4>
+      <div class="progress"><div class="bar green"></div></div>
+      <small>50% complete</small>
+    </div>
+    <div class="goal-card">
+      <h4>Run 100km</h4>
+      <div class="progress"><div class="bar purple"></div></div>
+      <small>30% complete</small>
+    </div>
+  </section>
+
+  <footer>
+     2026 GoalTracker.<br>
+      Built for focus and consistency.
+  </footer>
+  <script>
+    function toggleDark(){document.body.classList.toggle('dark')}
+  </script>
+
+</body>
+</html>
